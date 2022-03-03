@@ -6,7 +6,7 @@ body = st.container()
 
 with header:
     from PIL import Image
-    image = Image.open('D:\Medicplus_rate_chart\icon.png')
+    image = Image.open('icon.png')
 
     st.image(image,width=100)
     st.title("Welcome to Medicplus Pharma Merchants")
