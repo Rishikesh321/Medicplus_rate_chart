@@ -20,9 +20,11 @@ with body:
     
     col1,col2 = st.columns(2)
     with col1:
-     P = st.slider('Please Enter your Loan Amount ₹', 1000, 100000)
+     P = st.number_input('Please Enter your Loan Amount ₹',value = 1000)
+     st.write('The entered amount is ',P)
     with col2:
-     t = st.slider('Please Enter your Time Period in months',1,36)
+     t = st.number_input('Please Enter your Time Period in months',value = 3)
+     st.write('The entered timeperiod is ',t)
     
     #Calculation
     CI = round(float(P*(1 + (r/1200))**(12*t)),2)
